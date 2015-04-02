@@ -1,6 +1,6 @@
 # Minimal Blog
 
-Minimal markdown blog for anyone with a portfolio.
+Minimal markdown blog built with meteor for anyone with a portfolio.
 
 Demo here: [damir.meteor.com](http://damir.meteor.com).
 
