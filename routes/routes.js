@@ -8,11 +8,11 @@ Router.route('/admin', {
 Router.route('/', {
   name: 'home',
   data: function() {
-    return Posts.find();
+    return Posts.findOne({userId: this.userId});
   },
   waitOn: function () {
     return [
-      Meteor.subscribe('posts', 'admin')
+      Meteor.subscribe('posts', Meteor.userId())
     ]
   },
   action: function () {

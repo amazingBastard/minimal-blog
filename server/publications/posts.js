@@ -1,8 +1,4 @@
 Meteor.publish('posts', function() {
-  return Posts.find();
-});
-
-Meteor.publish('post', function(id) {
-  check(id, String)
-  return Posts.find(id);
+  var currentUserId = this.userId;
+  return Posts.find({userId: currentUserId});
 });

@@ -8,6 +8,6 @@ Template.home.rendered = function() {
 
 Template['home'].helpers({
   posts: function() {
-    return Posts.find();
+    return Posts.find({userId: this.userId}, {sort: {updated: -1}});
   }
 });
