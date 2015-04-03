@@ -1,3 +1,12 @@
 <template name="header">
-  header
+  <nav class="ui fixed secondary admin menu">
+    <a class="item" hreg="{{pathFor 'admin'}}">
+      <i class="user icon"></i> {{currentUser.username}}
+    </a>
+    <div class="right menu">
+      <a class="logout item">
+        <i class="power icon"></i>
+      </a>
+    </div>
+  </nav>
 </template>
