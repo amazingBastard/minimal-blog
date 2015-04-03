@@ -8,6 +8,6 @@ Template.home.rendered = function() {
 
 Template['home'].helpers({
   posts: function() {
-    return Posts.find({}, {sort: {created: -1}});
+    return Posts.find();
   }
 });

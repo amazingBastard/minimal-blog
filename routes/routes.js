@@ -1,11 +1,18 @@
+Router.route('/admin', {
+  name: 'admin'
+}, function () {
+  this.render('admin');
+  SEO.set({ title: Meteor.App.NAME });
+});
+
 Router.route('/', {
   name: 'home',
   data: function() {
-    return Posts.findOne({userId: this.userId});
+    return Posts.find();
   },
   waitOn: function () {
     return [
-      Meteor.subscribe('posts', Meteor.userId())
+      Meteor.subscribe('posts', 'admin')
     ]
   },
   action: function () {
@@ -15,12 +22,5 @@ Router.route('/', {
       this.render('loading');
   }
 }, function () {
-  SEO.set({ title: Meteor.App.NAME });
-});
-
-Router.route('/admin', {
-  name: 'admin'
-}, function () {
-  this.render('admin');
   SEO.set({ title: Meteor.App.NAME });
 });
