@@ -8,6 +8,31 @@
 	.header {
 		z-index: 1;
 
+		.ui.header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: @full;
+			padding: @space-small 0 @space-tiny;
+			background: @mute-color;
+			-moz-box-shadow: 0 0 @space-small 0 @highlight-color;
+			-webkit-box-shadow: 0 0 @space-small 0 @highlight-color;
+			box-shadow: 0 0 @space-small 0 @highlight-color;
+			color: @secondary-color;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+
+			.ui.logo {
+				width: @space-medium;
+				margin: 0;
+			}
+
+			&:hover,
+			&:focus {
+				color: @primary-color;
+			}
+		}
+
 		.ui.admin.menu {
 			background: @mute-color;
 			-moz-box-shadow: 0 0 @space-small 0 @highlight-color;

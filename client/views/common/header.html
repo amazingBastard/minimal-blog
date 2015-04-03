@@ -1,12 +1,19 @@
 <template name="header">
-  <nav class="ui fixed secondary admin menu">
-    <a class="item" href="{{pathFor 'admin'}}">
-      <i class="user icon"></i> {{currentUser.username}}
-    </a>
-    <div class="right menu">
-      <a class="logout item">
-        <i class="power icon"></i>
+  {{#if currentUser}}
+    <nav class="ui fixed secondary admin menu">
+      <a class="item" href="{{pathFor 'admin'}}">
+        <i class="user icon"></i> {{currentUser.username}}
       </a>
-    </div>
-  </nav>
+      <div class="right menu">
+        <a class="logout item">
+          <i class="power icon"></i>
+        </a>
+      </div>
+    </nav>
+  {{else}}
+    <a class="ui center aligned header" href="{{pathFor 'home'}}">
+      <img src="/images/brand/logo.png" class="ui circular logo image">
+      damir.io
+    </a>
+  {{/if}}
 </template>
