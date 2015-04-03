@@ -3,7 +3,8 @@ Meteor.publish('posts', function(options) {
     sort: Object,
     limit: Number
   });
-  return Posts.find({}, options);
+  var currentUserId = this.userId;
+  return Posts.find({userId: currentUserId}, options);
 });
 
 Meteor.publish('post', function(id) {

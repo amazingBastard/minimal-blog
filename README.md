@@ -80,6 +80,8 @@ Router.route('/about', function () {
 * Accounts
   * [accounts-password](https://github.com/meteor/meteor/tree/devel/packages/accounts-password)
   * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui)
+* Collections
+  * [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers/)
 * UI and UX
   * [fastclick](https://github.com/meteor/meteor/tree/devel/packages/fastclick)
   * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css/)
