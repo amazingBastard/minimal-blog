@@ -1,3 +1,18 @@
 <template name="admin">
-  admin
+  <div class="admin">
+    <div class="ui stackable page grid">
+  		<div class="column">
+        <div class="ui active animated fadeIn tab segment" data-tab="first">
+    			{{> insertPost}}
+    	  </div>
+    	  <div class="ui animated fadeIn tab segment" data-tab="second">
+    		  {{> insertProject}}
+    	  </div>
+      </div>
+    </div>
+    <div class="ui fluid two item animated fadeInUp menu">
+      <a class="active item" data-tab="first"><i class="plus icon"></i> Post</a>
+      <a class="item" data-tab="second"><i class="plus icon"></i> Project</a>
+    </div>
+  </div>
 </template>
