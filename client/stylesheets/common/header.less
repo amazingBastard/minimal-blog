@@ -25,11 +25,16 @@
 			.ui.logo {
 				width: @space-medium;
 				margin: 0;
+				background: @highlight-color;
 			}
 
 			&:hover,
 			&:focus {
 				color: @primary-color;
+
+				.ui.logo {
+					background: @mute-color;
+				}
 			}
 		}
 

@@ -5,3 +5,9 @@ Template.home.rendered = function() {
     Session.set('noContent', false);
   }
 };
+
+Template['home'].helpers({
+  posts: function() {
+    return Posts.find({}, {sort: {created: -1}});
+  }
+});

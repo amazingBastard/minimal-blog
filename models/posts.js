@@ -8,7 +8,7 @@ Posts.helpers({
     }
   },
   posts: function(username) {
-    return Posts.find({username: username}, {sort: {submitted: -1}});
+    return Posts.find({username: username}, {sort: {updated: -1}});
   }
 });
 
