@@ -1,11 +1,7 @@
 <template name="home">
   <div class="home">
-    {{#if noContent}}
-      no content
-    {{else}}
-      {{#each posts}}
-        {{> post}}
-      {{/each}}
-    {{/if}}
+    {{#each posts}}
+      {{> post}}
+    {{/each}}
   </div>
 </template>

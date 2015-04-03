@@ -15,7 +15,7 @@ Meteor.startup(function () {
 
   if (Posts.find().count() === 0) {
     var now = Date.now(),
-        admin = Meteor.users.findOne({username: 'admin'});
+        admin = Meteor.users.findOne();
 
     Posts.insert({
       title: 'Hello World',
