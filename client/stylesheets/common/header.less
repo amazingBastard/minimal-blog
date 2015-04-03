@@ -17,6 +17,17 @@
 			.item {
 				margin: 0;
 				padding: @space-small;
+				color: @secondary-color;
+
+				&:hover,
+				&:focus {
+					background: transparent;
+					color: @primary-color;
+
+					&.logout {
+						color: @negative-color;
+					}
+				}
 
 				.icon {
 					margin: 0;
