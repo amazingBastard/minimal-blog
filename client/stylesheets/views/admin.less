@@ -29,6 +29,25 @@
       left: 0;
       z-index: 1;
       border-radius: 0;
+      -moz-box-shadow: 0 0 @space-tiny 0 @highlight-color;
+      -webkit-box-shadow: 0 0 @space-tiny 0 @highlight-color;
+      box-shadow: 0 0 @space-tiny 0 @highlight-color;
+
+      .item {
+        border: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: @secondary-color;
+
+        &.active {
+          background: @mute-color;
+          -moz-box-shadow: 0 @space-mini 0 0 inset;
+          -webkit-box-shadow: 0 @space-mini 0 0 inset;
+          box-shadow: 0 @space-mini 0 0 inset;
+          color: @primary-color;
+        }
+      }
     }
 	}
 }

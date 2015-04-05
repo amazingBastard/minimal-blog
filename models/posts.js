@@ -13,15 +13,28 @@ Posts.helpers({
 });
 
 Posts.allow({
-  insert: function(userId, doc) {
-    return true;
-  },
+  insert: function() {
+		return true;
+	},
+	update: function() {
+		return true;
+	},
+	remove: function() {
+		return true;
+	}
+});
 
-  update: function(userId, doc, fields, modifier) {
-    return true;
+Posts.attachSchema(new SimpleSchema({
+  title: {
+    type: String,
+		label: 'Title'
   },
-
-  remove: function(userId, doc) {
-    return doc.userId === userId;
+  intro: {
+    type: String,
+    label: 'Introduction'
+  },
+  content: {
+    type: String,
+    label: 'Content'
   }
 });

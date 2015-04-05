@@ -82,6 +82,8 @@ Router.route('/about', function () {
   * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui)
 * Collections
   * [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers/)
+  * [aldeed:collection2](https://github.com/aldeed/meteor-collection2)
+  * [aldeed:autoform](https://github.com/aldeed/meteor-autoform)
 * UI and UX
   * [fastclick](https://github.com/meteor/meteor/tree/devel/packages/fastclick)
   * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css/)
