@@ -1,13 +1,9 @@
 <template name="post">
-	<div class="ui vertical segment">
-		<div class="ui page grid">
-			<div class="column">
-				<h2 class="ui header">
-					{{title}}
-					<small>posted {{formatDate date updated}}</small>
-				</h2>
-				<p>{{intro}}</p>
-			</div>
-		</div>
-	</div>
+	<a href="" class="ui post item">
+	  <h2 class="ui header">
+		  {{title}}
+			<small class="datestamp">posted {{formatDate date updated}}</small>
+		</h2>
+		<p class="ui intro">{{intro}}</p>
+	</a>
 </template>

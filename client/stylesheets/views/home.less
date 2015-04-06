@@ -7,5 +7,34 @@
 
   .home {
 
+    .ui.page.grid {
+
+      .column {
+
+        .ui.post.item {
+          display: inline-block;
+          width: 100%;
+          margin: @space-base auto;
+          border-bottom: 1px solid @mute-color;
+
+          .ui.header {
+            color: @secondary-color;
+            font-size: @font-size-larger;
+            line-height: @line-height-base;
+
+            .datestamp {
+              color: @highlight-color;
+              font-size: 50%;
+              font-weight: normal;
+            }
+          }
+
+          .ui.intro {
+            margin-bottom: @space-large;
+            color: fade(@secondary-color, 50%);
+          }
+        }
+      }
+    }
 	}
 }

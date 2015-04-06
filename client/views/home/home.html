@@ -3,9 +3,13 @@
     {{#if noContent}}
       no content
     {{else}}
-      {{#each posts}}
-        {{> post}}
-      {{/each}}
+      <div class="ui page grid">
+			  <div class="column">
+          {{#each posts}}
+            {{> post}}
+          {{/each}}
+        </div>
+      </div>
     {{/if}}
   </div>
 </template>

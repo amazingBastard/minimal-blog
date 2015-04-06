@@ -30,10 +30,6 @@ Template.registerHelper('formatDate', function(newDate, updatedDate) {
   }
 });
 
-Template.registerHelper('md', function(input) {
-  return Session.get(input);
-});
-
 Template.registerHelper('noContent', function() {
   return Session.get('noContent');
 });
