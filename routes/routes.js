@@ -1,20 +1,7 @@
 Router.route('/admin', {
   name: 'admin',
-  data: function() {
-    return Posts.findOne({userId: this.userId});
-  },
-  waitOn: function () {
-    return [
-      Meteor.subscribe('posts', Meteor.userId())
-    ]
-  },
-  action: function () {
-    if (this.ready())
-      this.render('admin');
-    else
-      this.render('loading');
-  }
 }, function () {
+  this.render('admin');
   SEO.set({ title: Meteor.App.NAME });
 });
 

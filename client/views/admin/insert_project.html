@@ -2,4 +2,19 @@
 	<h2 class="ui center aligned icon header">
     <i class="circular lab icon"></i>
   </h2>
+	<form class="ui admin insert project form">
+		<div class="field">
+			<input type="text" class="title" placeholder="Title" required autofocus />
+		</div>
+		<div class="field">
+			<textarea name="intro" class="intro" placeholder="Introduction" required></textarea>
+		</div>
+		<div class="field">
+			<textarea name="content" class="markdown content" placeholder="Add some markdown..."></textarea>
+		</div>
+		<div class="ui two fluid action buttons">
+			<a class="ui positive insert project button">Save</a>
+			<a class="ui negative cancel project button" href="{{pathFor 'home'}}">Cancel</a>
+		</div>
+	</form>
 </template>

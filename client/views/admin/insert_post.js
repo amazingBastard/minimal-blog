@@ -4,9 +4,9 @@ Template['insertPost'].events({
 
 		var now = Date.now(),
 		    newPost = {
-			    title: $('.field .title').val(),
-			    intro: $('.field .intro').val(),
-			    content: $('.field .markdown.content').val(),
+			    title: $('.post.form .title').val(),
+			    intro: $('.post.form .intro').val(),
+			    content: $('.post.form .markdown.content').val(),
 			    created: now,
 			    updated: now,
 			    author: Meteor.userId(),
