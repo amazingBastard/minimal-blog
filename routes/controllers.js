@@ -1,6 +1,5 @@
-/*
-PostsController = RouteController.extend({
-  template: 'posts',
+HomeController = RouteController.extend({
+  template: 'home',
   increment: 5,
   postsLimit: function() {
     return parseInt(this.params.postsLimit) || this.increment;
@@ -27,4 +26,3 @@ PostsController = RouteController.extend({
     };
   }
 });
-*/

@@ -14,6 +14,7 @@
         .ui.post.item {
           display: inline-block;
           width: 100%;
+          padding: 0;
           margin: @space-base auto;
           border-bottom: 1px solid @mute-color;
 
@@ -34,6 +35,16 @@
             margin-bottom: @space-large;
             color: fade(@secondary-color, 50%);
           }
+
+          &:hover,
+          &:focus {
+            padding-left: @space-base;
+          }
+        }
+
+        .ui.secondary.button {
+          display: block;
+          margin: 0 auto;
         }
       }
     }

@@ -5,22 +5,26 @@ Router.route('/admin', {
   SEO.set({ title: Meteor.App.NAME });
 });
 
-Router.route('/', {
-  name: 'home',
+Router.route('/posts/:_id', {
+  name: 'postDetails',
   data: function() {
-    return Posts.findOne({userId: this.userId});
+    return Posts.findOne(this.params._id);
   },
   waitOn: function () {
-    return [
-      Meteor.subscribe('posts', Meteor.userId())
-    ]
+    Meteor.subscribe('post', this.params._id)
   },
   action: function () {
     if (this.ready())
-      this.render('home');
+      this.render('postDetails')
     else
       this.render('loading');
   }
+}, function () {
+  SEO.set({ title: Meteor.App.NAME });
+});
+
+Router.route('/:postsLimit?', {
+  name: 'home'
 }, function () {
   SEO.set({ title: Meteor.App.NAME });
 });
