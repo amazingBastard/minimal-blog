@@ -1,7 +1,6 @@
 <template name="insertPost">
 	<h2 class="ui center aligned icon header">
     <i class="circular write icon"></i>
-    Write a New Post
   </h2>
 	<form class="ui admin insert post form">
 		<div class="field">
@@ -13,8 +12,8 @@
 		<div class="field">
 			<textarea name="content" class="markdown content" placeholder="Add some markdown..."></textarea>
 		</div>
-		<div class="action">
-			<button type="submit" class="ui positive insert post button">Save</button>
+		<div class="ui two fluid action buttons">
+			<a class="ui positive insert post button">Save</a>
 			<a class="ui negative insert post button" href="{{pathFor 'home'}}">Cancel</a>
 		</div>
 	</form>
