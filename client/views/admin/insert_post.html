@@ -1,6 +1,20 @@
 <template name="insertPost">
 	<h2 class="ui center aligned icon header">
     <i class="circular write icon"></i>
-    Write Post
+    Write a New Post
   </h2>
+	<form class="ui admin insert post form">
+		<div class="field">
+			<input type="text" class="title" placeholder="Title" required autofocus />
+		</div>
+		<div class="field">
+			<textarea name="intro" class="intro" placeholder="Introduction" required></textarea>
+		</div>
+		<div class="field">
+			<textarea name="content" class="markdown content" placeholder="Write your post with markdown"></textarea>
+		</div>
+		<div class="action">
+			<button type="submit" class="ui positive insert post button">Save</button>
+		</div>
+	</form>
 </template>
