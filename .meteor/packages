@@ -18,3 +18,4 @@ less
 momentjs:moment
 dburles:collection-helpers
 mrt:flash-messages
+multiply:iron-router-progress
