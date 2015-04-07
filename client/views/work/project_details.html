@@ -1,0 +1,12 @@
+<template name="projectDetails">
+  <div class="ui project details page grid">
+    <article class="column">
+      <h1 class="ui header">
+  		  {{title}}
+  			<small class="datestamp">posted {{formatDate date updated}}</small>
+  		</h1>
+		  <p>{{intro}}</p>
+      {{#markdown}}{{content}}{{/markdown}}
+    </article>
+	</div>
+</template>

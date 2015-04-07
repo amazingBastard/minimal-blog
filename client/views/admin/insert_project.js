@@ -16,7 +16,7 @@ Template['insertProject'].events({
 		    };
 
 		Projects.insert(newProject);
-		Router.go('home');
+		Router.go('work');
 		FlashMessages.sendSuccess('Project added');
 	}
 });

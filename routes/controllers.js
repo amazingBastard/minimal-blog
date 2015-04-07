@@ -26,3 +26,32 @@ HomeController = RouteController.extend({
     };
   }
 });
+
+WorkController = RouteController.extend({
+  template: 'work',
+  increment: 10,
+  projectsLimit: function() {
+    return parseInt(this.params.projectsLimit) || this.increment;
+  },
+  findOptions: function() {
+    return {sort: {updated: -1}, limit: this.projectsLimit()};
+  },
+  subscriptions: function() {
+    this.projectsSub = Meteor.subscribe('projects', this.findOptions());
+  },
+  waitOn: function() {
+    return Meteor.subscribe('projects', this.findOptions());
+  },
+  projects: function() {
+    return Projects.find({}, this.findOptions());
+  },
+  data: function() {
+    var hasMore = this.projects().count() === this.projectsLimit();
+    var nextPath = this.route.path({projectsLimit: this.projectsLimit() + this.increment});
+    return {
+      projects: this.projects(),
+      ready: this.projectsSub.ready,
+      nextPath: hasMore ? nextPath : null
+    };
+  }
+});

@@ -1,24 +1,20 @@
 <template name="home">
   <div class="home">
-    {{#if noContent}}
-      no content :(
-    {{else}}
-      <div class="ui page grid">
-			  <div class="ui animated list column">
-          {{#each posts}}
-            {{> post}}
-          {{/each}}
-          {{#if nextPath}}
-            <a class="ui transparent button" href="{{nextPath}}">
-              <i class="chevron circle down icon"></i>
-            </a>
-          {{else}}
-            {{#unless ready}}
-              {{> loading}}
-            {{/unless}}
-          {{/if}}
-        </div>
+    <div class="ui page grid">
+			<div class="ui animated list column">
+        {{#each posts}}
+          {{> post}}
+        {{/each}}
+        {{#if nextPath}}
+          <a class="ui transparent button" href="{{nextPath}}">
+            <i class="chevron circle down icon"></i>
+          </a>
+        {{else}}
+          {{#unless ready}}
+            {{> loading}}
+          {{/unless}}
+        {{/if}}
       </div>
-    {{/if}}
+    </div>
   </div>
 </template>

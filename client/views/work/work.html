@@ -1,5 +1,20 @@
 <template name="work">
   <div class="work">
-    work
+    <div class="ui page grid">
+			<div class="ui animated list column">
+        {{#each projects}}
+          {{> project}}
+        {{/each}}
+        {{#if nextPath}}
+          <a class="ui transparent button" href="{{nextPath}}">
+            <i class="chevron circle down icon"></i>
+          </a>
+        {{else}}
+          {{#unless ready}}
+            {{> loading}}
+          {{/unless}}
+        {{/if}}
+      </div>
+    </div>
   </div>
 </template>
