@@ -41,5 +41,35 @@
         }
       }
     }
+
+    .action.buttons {
+
+      .ui.button {
+        padding: @space-small;
+        font-size: @font-size-larger;
+
+        &:first-child {
+          text-align: right;
+
+          &:hover,
+          &:focus {
+            color: @primary-color;
+          }
+        }
+
+        &:last-child {
+          text-align: left;
+
+          &:hover,
+          &:focus {
+            color: @negative-color;
+          }
+        }
+
+        .icon {
+          margin: 0;
+        }
+      }
+    }
   }
 }

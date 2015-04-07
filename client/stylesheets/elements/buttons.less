@@ -13,4 +13,24 @@
 			background: @secondary-color;
 		}
 	}
+
+	&.secondary {
+		background: @secondary-color;
+
+		&:hover,
+		&:focus {
+			background: @highlight-color;
+			color: @secondary-color;
+		}
+	}
+
+	&.transparent {
+		background: transparent;
+		color: @secondary-color;
+
+		&:hover,
+		&:focus {
+			color: fade(@secondary-color, 75%);
+		}
+	}
 }

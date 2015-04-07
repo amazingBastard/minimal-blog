@@ -9,7 +9,9 @@
             {{> post}}
           {{/each}}
           {{#if nextPath}}
-            <a class="ui secondary button" href="{{nextPath}}">Load more...</a>
+            <a class="ui transparent button" href="{{nextPath}}">
+              <i class="chevron circle down icon"></i>
+            </a>
           {{else}}
             {{#unless ready}}
               {{> loading}}

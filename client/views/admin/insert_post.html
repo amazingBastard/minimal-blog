@@ -13,8 +13,12 @@
 			<textarea name="content" class="markdown content" placeholder="Add some markdown..."></textarea>
 		</div>
 		<div class="ui two fluid action buttons">
-			<a class="ui positive insert post button">Save</a>
-			<a class="ui negative cancel post button" href="{{pathFor 'home'}}">Cancel</a>
+			<a class="ui transparent insert post button">
+			  <i class="save icon"></i>
+			</a>
+			<a class="ui transparent cancel post button" href="{{pathFor 'home'}}">
+			  <i class="ban icon"></i>
+			</a>
 		</div>
 	</form>
 </template>
