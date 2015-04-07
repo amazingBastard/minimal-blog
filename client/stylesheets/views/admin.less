@@ -23,28 +23,27 @@
       }
     }
 
-    .ui.fluid.menu {
+    .ui.admin.menu {
       position: fixed;
       bottom: 0;
       left: 0;
+      margin: @space-tiny;
       z-index: 1;
-      border-radius: 0;
-      -moz-box-shadow: 0 0 @space-tiny 0 @highlight-color;
-      -webkit-box-shadow: 0 0 @space-tiny 0 @highlight-color;
-      box-shadow: 0 0 @space-tiny 0 @highlight-color;
+      background: transparent;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
 
-      .item {
+      .ui.icon.button {
         border: 0;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none;
+        background: fade(@mute-color, 50%);
         color: @secondary-color;
 
         &.active {
-          background: @mute-color;
-          -moz-box-shadow: 0 @space-mini 0 0 inset;
-          -webkit-box-shadow: 0 @space-mini 0 0 inset;
-          box-shadow: 0 @space-mini 0 0 inset;
+          background: fade(@mute-color, 75%);
           color: @primary-color;
         }
       }

@@ -1,0 +1,21 @@
+@import '../utilities/helpers';
+@import '../utilities/variables';
+
+// menu styles
+
+.ui.bottom.menu {
+  background: @secondary-color;
+
+	.item {
+    color: @light;
+
+    &:before {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      color: @highlight-color;
+    }
+  }
+}

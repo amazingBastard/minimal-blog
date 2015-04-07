@@ -1,11 +1,11 @@
 <template name="layout">
-  <main class="layout">
+  {{> menu}}
+  <main class="pusher layout">
 	  <header class="header">
       {{> header}}
       {{> flashMessages}}
 		</header>
 		<section class="view">
-      {{> menu}}
 		  {{> yield}}
 		</section>
 		<footer class="footer">
