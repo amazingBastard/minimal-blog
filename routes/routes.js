@@ -5,6 +5,18 @@ Router.route('/admin', {
   SEO.set({ title: Meteor.App.NAME });
 });
 
+Router.route('/about', {
+  name: 'about'
+}, function () {
+  SEO.set({ title: Meteor.App.NAME });
+});
+
+Router.route('/work', {
+  name: 'work'
+}, function () {
+  SEO.set({ title: Meteor.App.NAME });
+});
+
 Router.route('/posts/:_id', {
   name: 'postDetails',
   data: function() {

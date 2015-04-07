@@ -78,6 +78,7 @@ Router.route('/about', function () {
 * Routing
   * [iron:router](https://github.com/EventedMind/iron-router)
   * [multiply:iron-router-progress](https://github.com/Multiply/iron-router-progress/)
+  * [zimme:iron-router-active](https://github.com/zimme/meteor-iron-router-active/)
 * Accounts
   * [accounts-password](https://github.com/meteor/meteor/tree/devel/packages/accounts-password)
   * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui)
