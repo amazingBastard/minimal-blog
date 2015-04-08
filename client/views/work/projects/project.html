@@ -3,6 +3,11 @@
 	  <h2 class="ui header">
 		  {{title}}
 			<small class="datestamp">added {{formatDate date updated}}</small>
+      {{#if currentUser}}
+			  <a class="admin action" href="{{pathFor 'editProject'}}">
+				  <i class="configure icon"></i>
+			  </a>
+			{{/if}}
 		</h2>
 		<p class="ui intro">{{intro}}</p>
 	</a>

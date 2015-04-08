@@ -29,6 +29,24 @@ Router.route('/projects/:_id', {
   SEO.set({ title: Meteor.App.NAME });
 });
 
+Router.route('/projects/edit/:_id', {
+  name: 'editProject',
+  waitOn: function () {
+    return Meteor.subscribe('project', this.params._id);
+  },
+  data: function() {
+    return Projects.findOne(this.params._id);
+  },
+  action: function () {
+    if (this.ready())
+      this.render('editProject')
+    else
+      this.render('loading');
+  }
+}, function () {
+  SEO.set({ title: Meteor.App.NAME });
+});
+
 Router.route('/work/:projectsLimit?', {
   name: 'work'
 }, function () {
