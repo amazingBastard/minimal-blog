@@ -93,6 +93,7 @@ Router.route('/about', function () {
   * [tdj:elasticjs](https://atmospherejs.com/tdj/elasticjs)
   * [mrt:flash-messages](https://github.com/camilosw/flash-messages/)
   * [joshowens:shareit](https://github.com/meteorclub/shareit/)
+  * [obvio171:disqus](https://github.com/obvio171/meteor-disqus)
 * SEO
   * [manuelschoebel:ms-seo](https://github.com/DerMambo/ms-seo)
 * Development
