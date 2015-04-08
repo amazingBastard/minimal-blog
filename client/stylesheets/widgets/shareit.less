@@ -6,7 +6,7 @@
 .layout {
 
   .share-buttons {
-		margin: @space-base auto;
+		margin: @space-largest auto;
 		text-align: center;
 
 		.ui.icon.button {
@@ -43,6 +43,14 @@
           &:before {
             content: "\f0d5";
           }
+        }
+      }
+
+      &:hover,
+      &:focus {
+
+        .fa {
+          color: @secondary-color;
         }
       }
     }

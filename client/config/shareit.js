@@ -8,7 +8,5 @@ ShareIt.configure({
   },
   classes: 'ui circular icon button',
   iconOnly: true,
-  applyColors: true,
-  faSize: '',
-  faClass: 'icon'
+  applyColors: true
 });
