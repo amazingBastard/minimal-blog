@@ -91,6 +91,7 @@ Router.route('/about', function () {
   * [markdown](https://atmospherejs.com/meteor/markdown)
   * [tdj:elasticjs](https://atmospherejs.com/tdj/elasticjs)
   * [mrt:flash-messages](https://github.com/camilosw/flash-messages/)
+  * [joshowens:shareit](https://github.com/meteorclub/shareit/)
 * SEO
   * [manuelschoebel:ms-seo](https://github.com/DerMambo/ms-seo)
 * Development

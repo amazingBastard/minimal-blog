@@ -1,0 +1,50 @@
+@import '../utilities/helpers';
+@import '../utilities/variables';
+
+// shareit styles
+
+.layout {
+
+  .share-buttons {
+		margin: @space-base auto;
+		text-align: center;
+
+		.ui.icon.button {
+		  margin: 0;
+
+      .fa {
+        display: block;
+        margin: 0;
+        height: @space-base;
+        color: @light;
+        font-size: @font-size-base;
+        font-family: Icons;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+
+        &.fa-facebook {
+        padding: 0 @space-mini;
+
+          &:before {
+            content: "\f09a";
+          }
+        }
+
+        &.fa-twitter {
+
+          &:before {
+            content: "\f099";
+          }
+        }
+
+        &.fa-google-plus {
+
+          &:before {
+            content: "\f0d5";
+          }
+        }
+      }
+    }
+  }
+}
