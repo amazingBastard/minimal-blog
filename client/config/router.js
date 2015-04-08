@@ -2,7 +2,8 @@ Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading',
   progressSpinner: false,
-  progressDelay: 100
+  progressDelay: 100,
+  trackPageView: true
 });
 
 Router.plugin('ensureSignedIn', {
