@@ -1,0 +1,30 @@
+<template name="editPost">
+	<div class="admin">
+    <div class="ui stackable page grid">
+  		<div class="column">
+				<h2 class="ui center aligned icon header">
+			    <i class="circular write icon"></i>
+			  </h2>
+				<form class="ui admin update post form">
+					<div class="field">
+						<input type="text" class="title" placeholder="Title" value="{{title}}" required autofocus />
+					</div>
+					<div class="field">
+						<textarea name="intro" class="intro" placeholder="Introduction" value="{{intro}}" required></textarea>
+					</div>
+					<div class="field">
+						<textarea name="content" class="markdown content" placeholder="Add some markdown...">{{content}}</textarea>
+					</div>
+					<div class="ui two fluid action buttons">
+						<a class="ui transparent update post button">
+						  <i class="save icon"></i>
+						</a>
+						<a class="ui transparent remove post button">
+						  <i class="trash outline icon"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

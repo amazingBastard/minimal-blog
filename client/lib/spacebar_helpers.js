@@ -29,7 +29,3 @@ Template.registerHelper('formatDate', function(newDate, updatedDate) {
     return moment(updatedDate).fromNow();
   }
 });
-
-Template.registerHelper('noContent', function() {
-  return Session.get('noContent');
-});

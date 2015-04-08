@@ -53,6 +53,24 @@ Router.route('/posts/:_id', {
   SEO.set({ title: Meteor.App.NAME });
 });
 
+Router.route('/posts/edit/:_id', {
+  name: 'editPost',
+  waitOn: function () {
+    return Meteor.subscribe('post', this.params._id);
+  },
+  data: function() {
+    return Posts.findOne(this.params._id);
+  },
+  action: function () {
+    if (this.ready())
+      this.render('editPost')
+    else
+      this.render('loading');
+  }
+}, function () {
+  SEO.set({ title: Meteor.App.NAME });
+});
+
 Router.route('/:postsLimit?', {
   name: 'home'
 }, function () {

@@ -6,5 +6,5 @@ Router.configure({
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['admin']
+  only: ['admin', 'editPost']
 });
