@@ -7,6 +7,7 @@
   		</h1>
 		  <p>{{intro}}</p>
       {{#markdown}}{{content}}{{/markdown}}
+      {{> disqus}}
       {{> shareit}}
       {{#if currentUser}}
         <a class="circular ui admin icon button" href="{{pathFor 'editPost'}}">
