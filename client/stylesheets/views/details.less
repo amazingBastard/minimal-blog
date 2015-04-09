@@ -12,9 +12,21 @@
       .ui.header {
         margin: @space-base auto @space-large;
         color: @secondary-color;
-        font-size: @font-size-largest;
+        font-size: @font-size-x-large;
         line-height: @line-height-base;
         text-align: center;
+
+        @media (min-width: @tablet-width) {
+          font-size: @font-size-x-larger;
+        }
+
+        @media (min-width: @medium-desktop-width) {
+          font-size: @font-size-x-largest;
+        }
+
+        @media (min-width: @large-desktop-width) {
+          font-size: @font-size-huge;
+        }
 
         .datestamp {
           display: block;

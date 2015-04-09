@@ -7,33 +7,118 @@ html {
 
   body {
 		font-family: @font-family-base;
+    font-size: @font-size-base;
 
     h1 {
-      font-size: @font-size-x-large
+      font-size: @font-size-x-large;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-x-larger;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-x-largest;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-huge;
+      }
     }
 
     h2 {
-      font-size: @font-size-largest
+      font-size: @font-size-largest;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-x-large;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-x-larger;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-x-largest;
+      }
     }
 
     h3 {
       font-size: @font-size-larger;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-largest;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-x-large;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-x-larger;
+      }
     }
 
     h4 {
       font-size: @font-size-large;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-larger;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-largest;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-x-large;
+      }
     }
 
     h5 {
       font-size: @font-size-base;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-large;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-larger;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-largest;
+      }
     }
 
     h6 {
       font-size: @font-size-small;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-base;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-large;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-larger;
+      }
     }
 
 		p {
       font-size: @font-size-base;
+
+      @media (min-width: @tablet-width) {
+        font-size: @font-size-large;
+      }
+
+      @media (min-width: @medium-desktop-width) {
+        font-size: @font-size-larger;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        font-size: @font-size-largest;
+      }
     }
 
     a {

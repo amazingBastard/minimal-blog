@@ -24,6 +24,18 @@
             font-size: @font-size-larger;
             line-height: @line-height-base;
 
+            @media (min-width: @tablet-width) {
+              font-size: @font-size-largest;
+            }
+
+            @media (min-width: @medium-desktop-width) {
+              font-size: @font-size-x-large;
+            }
+
+            @media (min-width: @large-desktop-width) {
+              font-size: @font-size-x-larger;
+            }
+
             .datestamp {
               color: @highlight-color;
               font-size: 50%;

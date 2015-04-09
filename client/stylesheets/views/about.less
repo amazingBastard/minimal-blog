@@ -14,10 +14,36 @@
         .ui.header {
           margin: @space-base auto @space-large;
           color: @secondary-color;
+          font-size: @font-size-x-large;
           line-height: @line-height-base;
+
+          @media (min-width: @tablet-width) {
+            font-size: @font-size-x-larger;
+          }
+
+          @media (min-width: @medium-desktop-width) {
+            font-size: @font-size-x-largest;
+          }
+
+          @media (min-width: @large-desktop-width) {
+            font-size: @font-size-huge;
+          }
 
           &.dividing {
             margin-top: @space-large;
+            font-size: @font-size-largest;
+
+            @media (min-width: @tablet-width) {
+              font-size: @font-size-x-large;
+            }
+
+            @media (min-width: @medium-desktop-width) {
+              font-size: @font-size-x-larger;
+            }
+
+            @media (min-width: @large-desktop-width) {
+              font-size: @font-size-x-largest;
+            }
           }
         }
       }
