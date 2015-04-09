@@ -39,3 +39,32 @@
 .break {
   display: block;
 }
+
+// images
+
+.image {
+  margin: @space-base auto @space-large;
+  border-radius: @space-mini;
+
+  &.full {
+    width: @full;
+  }
+
+  &.floating {
+    width: @full;
+
+    &.left {
+      margin-right: @space-large;
+      float: left;
+    }
+
+    &.right {
+      margin-left: @space-large;
+      float: right;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: @one-half;
+    }
+  }
+}
