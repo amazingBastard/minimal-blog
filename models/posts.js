@@ -23,3 +23,40 @@ Posts.allow({
 		return !!userId;
 	}
 });
+
+Posts.attachSchema(new SimpleSchema({
+	title: {
+		type: String,
+		label: 'Title',
+		max: 50,
+		autoform: {
+      afFieldInput: {
+        class: 'title',
+				placeholder: 'Title',
+				autofocus: true
+      }
+    }
+  },
+  intro: {
+    type: String,
+    label: 'Introduction',
+    max: 200,
+    autoform: {
+      afFieldInput: {
+        class: 'intro',
+        placeholder: 'Introduction'
+      }
+    }
+  },
+  content: {
+    type: String,
+    label: 'Content',
+    optional: true,
+    autoform: {
+      afFieldInput: {
+        class: 'markdown content',
+        placeholder: 'Add some markdown... or not... :)'
+      }
+    }
+  }
+}));
