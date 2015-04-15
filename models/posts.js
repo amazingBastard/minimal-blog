@@ -43,6 +43,7 @@ Posts.attachSchema(new SimpleSchema({
     max: 200,
     autoform: {
       afFieldInput: {
+        type: 'textarea',
         class: 'intro',
         placeholder: 'Introduction'
       }
@@ -54,6 +55,7 @@ Posts.attachSchema(new SimpleSchema({
     optional: true,
     autoform: {
       afFieldInput: {
+        type: 'textarea',
         class: 'markdown content',
         placeholder: 'Add some markdown... or not... :)'
       }

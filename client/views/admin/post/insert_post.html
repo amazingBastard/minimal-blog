@@ -2,23 +2,32 @@
 	<h2 class="ui center aligned icon header">
     <i class="circular write icon"></i>
   </h2>
-	<form class="ui admin insert post form">
-		<div class="field">
-			<input type="text" class="title" placeholder="Title" required autofocus />
+	{{#autoForm collection='Posts' doc=this class='ui admin insert post form' id='insertPost' type='insert' validation='keyup'}}
+	  <div class="field">
+			{{> afFieldInput name="title"}}
+			{{#if afFieldIsInvalid name='title'}}
+			  <div class="alert alert-info">{{{afFieldMessage name='title'}}}</div>
+			{{/if}}
 		</div>
 		<div class="field">
-			<textarea name="intro" class="intro" placeholder="Introduction" required></textarea>
+			{{> afFieldInput name="intro"}}
+			{{#if afFieldIsInvalid name='intro'}}
+			  <div class="alert alert-info">{{{afFieldMessage name='intro'}}}</div>
+			{{/if}}
 		</div>
 		<div class="field">
-			<textarea name="content" class="markdown content" placeholder="Add some markdown..."></textarea>
+			{{> afFieldInput name="content"}}
+			{{#if afFieldIsInvalid name='content'}}
+			  <div class="alert alert-info">{{{afFieldMessage name='content'}}}</div>
+			{{/if}}
 		</div>
 		<div class="ui two fluid action buttons">
-			<a class="ui transparent insert post button">
+			<button type="submit" class="ui transparent insert post button">
 			  <i class="save icon"></i>
-			</a>
+			</button>
 			<a class="ui transparent cancel post button" href="{{pathFor 'home'}}">
 			  <i class="ban icon"></i>
 			</a>
 		</div>
-	</form>
+	{{/autoForm}}
 </template>
