@@ -94,6 +94,7 @@ Router.route('/about', function () {
   * [mrt:flash-messages](https://github.com/camilosw/flash-messages/)
   * [joshowens:shareit](https://github.com/meteorclub/shareit/)
   * [obvio171:disqus](https://github.com/obvio171/meteor-disqus)
+  * [miro:mailchimp](https://github.com/MiroHibler/meteor-mailchimp)
 * SEO
   * [manuelschoebel:ms-seo](https://github.com/DerMambo/ms-seo)
 * Development
