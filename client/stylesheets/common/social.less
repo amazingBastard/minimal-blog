@@ -1,0 +1,49 @@
+@import '../utilities/helpers';
+@import '../utilities/variables';
+
+// social styles
+
+.ui.social.menu {
+	margin: @space-largest 0 @space-small;
+	background: transparent;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+	.ui.icon.button {
+	  position: relative;
+		margin: 0 @space-small;
+		background: @mute-color;
+		color: @secondary-color;
+		font-size: @font-size-smaller;
+
+		&:hover,
+		&:focus {
+			color: @light;
+		}
+
+		&.twitter {
+
+			&:hover,
+			&:focus {
+				background-color: #4092cc;
+			}
+		}
+
+		&.linkedin {
+
+			&:hover,
+			&:focus {
+			  background-color: #1f88be;
+			}
+		}
+
+		&.github {
+
+			&:hover,
+			&:focus {
+			  background-color: #333;
+			}
+		}
+  }
+}
