@@ -18,9 +18,10 @@
     }
 
     .email {
-      padding: @space-small;
+      padding: @space-small @space-base;
       border: 0;
       color: @secondary-color;
+      outline: 0;
     }
 
     .subscribe {
@@ -32,6 +33,12 @@
       border: 0;
       background: @primary-color;
       color: @mute-color;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background: darken(@primary-color, 5%);
+      }
     }
 
     @media (min-width: @medium-desktop-width) {

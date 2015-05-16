@@ -4,5 +4,11 @@
       "id": "UA-31367619-3"
     },
     "disqus": "damir-software"
+  },
+  "private": {
+    "MailChimp": {
+      "apiKey": "<Your MailChimp API Key>",
+      "listId": "<ID of your default mailing list>"
+    }
   }
 }
