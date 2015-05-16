@@ -7,10 +7,32 @@
 
   .ui.mailchimp.widget {
     margin: @space-largest -@space-base 0;
-		padding: @space-base;
+		padding: @space-largest @space-base;
 	  background: @secondary-color;
     text-align: center;
-    color: @mute-color;
+
+    .message {
+      margin-bottom: @space-small;
+      color: @primary-color;
+      font-size: @font-size-larger;
+    }
+
+    .email {
+      padding: @space-small;
+      border: 0;
+      color: @secondary-color;
+    }
+
+    .subscribe {
+      position: relative;
+      top: -0.1rem;
+      left: -@space-tiny;
+      margin: 0;
+      padding: 0.55rem @space-base;
+      border: 0;
+      background: @primary-color;
+      color: @mute-color;
+    }
 
     @media (min-width: @medium-desktop-width) {
       margin-right: -12%;
@@ -24,6 +46,17 @@
       margin-left: -24%;
       padding-right: 24%;
       padding-left: 24%;
+
+      .subscribe {
+        top: -0.05rem;
+      }
+    }
+
+    @media (min-width: @jumbo-desktop-width) {
+      margin-right: -46%;
+      margin-left: -46%;
+      padding-right: 46%;
+      padding-left: 46%;
     }
   }
 }
