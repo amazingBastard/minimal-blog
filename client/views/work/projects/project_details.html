@@ -9,9 +9,9 @@
       {{#markdown}}{{content}}{{/markdown}}
       <div class="ui mailchimp widget">
         {{> MailChimpListSubscribe}}
+        {{> shareit}}
       </div>
       {{> disqus}}
-      {{> shareit}}
       {{#if currentUser}}
         <a class="circular ui admin icon button" href="{{pathFor 'editProject'}}">
   	      <i class="configure icon"></i>

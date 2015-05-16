@@ -6,11 +6,13 @@
 .layout {
 
   .share-buttons {
-		margin: @space-largest auto;
+    position: relative;
+    top: 4.25rem;
+		margin: 0 auto;
 		text-align: center;
 
 		.ui.icon.button {
-		  margin: 0;
+		  margin: 0 @space-small;
 
       .fa {
         display: block;
@@ -48,6 +50,7 @@
 
       &:hover,
       &:focus {
+        background: @mute-color;
 
         .fa {
           color: @secondary-color;
