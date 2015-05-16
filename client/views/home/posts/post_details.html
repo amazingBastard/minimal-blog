@@ -7,6 +7,9 @@
   		</h1>
 		  <p>{{intro}}</p>
       {{#markdown}}{{content}}{{/markdown}}
+      <div class="ui mailchimp widget">
+        {{> MailChimpListSubscribe}}
+      </div>
       {{> disqus}}
       {{> shareit}}
       {{#if currentUser}}

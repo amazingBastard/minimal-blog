@@ -1,14 +1,16 @@
 @import '../utilities/helpers';
 @import '../utilities/variables';
 
-// disqus styles
+// mailchimp styles
 
 .layout {
 
-  #disqus_thread {
-    margin: 0 -@space-base;
-    padding: @space-base;
-    background: @mute-color;
+  .ui.mailchimp.widget {
+    margin: @space-largest -@space-base 0;
+		padding: @space-base;
+	  background: @secondary-color;
+    text-align: center;
+    color: @mute-color;
 
     @media (min-width: @medium-desktop-width) {
       margin-right: -12%;
