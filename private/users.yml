@@ -2,8 +2,3 @@ admin:
   email: dvazgird@gmail.com
   username: admin
   password: admin
-
-test:
-  email: test@gmail.com
-  username: test
-  password: test

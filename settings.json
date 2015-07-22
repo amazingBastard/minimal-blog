@@ -7,8 +7,8 @@
   },
   "private": {
     "MailChimp": {
-      "apiKey": "<Your MailChimp API Key>",
-      "listId": "<ID of your default mailing list>"
+      "apiKey": "41fc8e780d1d28b1c4d0514cf7688a89-us11",
+      "listId": "77e3d18de0"
     }
   }
 }
