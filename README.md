@@ -27,6 +27,8 @@ Demo here: [damir.meteor.com](http://damir.meteor.com).
 
 * Markdown editor for posts and work
 * Admin account for insert/update/delete
+* social media sharing
+* mailchimp subscription form
 
 ## How to use
 
