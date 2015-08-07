@@ -105,7 +105,7 @@ html {
       }
     }
 
-		p {
+		p, a, pre, code, li {
       font-size: @font-size-base;
 
       @media (min-width: @tablet-width) {
@@ -134,6 +134,14 @@ html {
       width: @full;
       margin: @space-base auto @space-large;
       border-radius: @space-mini;
+    }
+
+    pre {
+      width: @full;
+      padding: @space-base;
+      border-radius: @space-mini;
+      background-color: @secondary-color;
+      color: @primary-color;
     }
 	}
 }
