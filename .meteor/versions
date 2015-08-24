@@ -40,6 +40,8 @@ manuelschoebel:ms-seo@0.4.1
 markdown@1.0.4
 meteor@1.1.6
 meteor-platform@1.2.2
+meteorhacks:async@1.0.0
+meteorhacks:npm@1.4.0
 minifiers@1.1.5
 minimongo@1.0.8
 miro:mailchimp@1.0.4

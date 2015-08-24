@@ -8,6 +8,7 @@ Demo here: [damir.meteor.com](http://damir.meteor.com).
 
 * [Roadmap](#roadmap)
   * [Features](#features)
+  * [Refactoring](#refactoring)
 * [How to use](#how-to-use)
   * [Requirements](#requirements)
   * [Installation](#installation)
@@ -25,10 +26,16 @@ Demo here: [damir.meteor.com](http://damir.meteor.com).
 
 ### Features
 
-* Markdown editor for posts and work
-* Admin account for insert/update/delete
-* social media sharing
-* mailchimp subscription form
+* ~~Markdown editor for posts and work~~
+* ~~Admin account for insert/update/delete~~
+* ~~social media sharing~~
+* ~~mailchimp subscription form~~
+
+### Refactoring
+
+* update ui/ux for insert/update/delete module
+* create next/prev navigation for post/project views
+* update ui/ux for desktop/tablet navigation
 
 ## How to use
 
@@ -102,6 +109,7 @@ Router.route('/about', function () {
 * Development
   * [less](https://github.com/meteor/meteor/tree/devel/packages/less)
   * [momentjs:moment](https://github.com/moment/moment/)
+  * [meteorhacks:npm](https://github.com/meteorhacks/npm)
 
 The "insecure" and "autopublish" packages are removed by default (they make your app vulnerable).
 
